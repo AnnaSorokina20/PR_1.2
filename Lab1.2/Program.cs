@@ -58,7 +58,7 @@ class Program
     // Зчитує обмеження у вигляді рядків, поки користувач не натисне Enter
     static List<string> ReadConstraints()
     {
-        Console.WriteLine("Введіть обмеження:");
+        Console.WriteLine("Введіть обмеження (Порожній рядок - кінець):");
         List<string> constraints = new List<string>();
         string line;
         while (!string.IsNullOrWhiteSpace(line = Console.ReadLine()))
