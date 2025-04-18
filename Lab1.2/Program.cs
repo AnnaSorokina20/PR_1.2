@@ -341,7 +341,10 @@ class Program
 
             if (pivotRow == -1)
             {
-                Console.WriteLine("Не знайдено розв'язувальний рядок. Цільова функція Z не обмежена зверху.");
+                if (isMinimization)
+                    Console.WriteLine("Не знайдено розв'язувальний рядок. Цільова функція Z не обмежена знизу.");
+                else
+                    Console.WriteLine("Не знайдено розв'язувальний рядок. Цільова функція Z не обмежена зверху.");
                 return true;
             }
 
